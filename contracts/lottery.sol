@@ -11,10 +11,19 @@ contract Lottery {
     }
  
     receive() external payable {
+
+        require(msg.value == 0.1 ether);
         players.push(payable(msg.sender));
     }   
     
     function getBalance() public view returns(uint) {
+        require(msg.sender == manager);
         return address(this).balance;
+    }
+    
+    function random() public view returns(uint) {
+        //IMPORTANT! This is not to be used in a true smart contract as miners could exploit the algorithm.
+        //For a true random number, this should be used instead: https://docs.chain.link/docs/get-a-random-number/
+        return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, players.length)));
     }
 }

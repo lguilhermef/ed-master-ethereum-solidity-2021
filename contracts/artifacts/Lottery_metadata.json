@@ -56,6 +56,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "random",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -88,11 +101,11 @@
 	},
 	"sources": {
 		"contracts/lottery.sol": {
-			"keccak256": "0xc007456c98866f9b66c7840ae8d1ab6f2b40d1cceaf3e300b42dcf51d342f576",
+			"keccak256": "0x45d6bcf663780de7c1a50971d74c1eff5980245e9dc0661e854f3f17613fa0de",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cdf03a696c63c0390fd74db491147656052d0133ac5f317542e62ea518a22025",
-				"dweb:/ipfs/QmRghfXH16nrVS6Ak3ogtVi8MqPkjvKfsocH1h7SFrL17n"
+				"bzz-raw://eaea7311043d66e8f4e19cd1777c5a83876b30281028a52b69e12fecad9c0d7e",
+				"dweb:/ipfs/QmdRWATyavDQy4VZRAWfo4pPmUVksT5GWqAqFmjN5yddM3"
 			]
 		}
 	},
