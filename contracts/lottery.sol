@@ -26,4 +26,17 @@ contract Lottery {
         //For a true random number, this should be used instead: https://docs.chain.link/docs/get-a-random-number/
         return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, players.length)));
     }
+    
+    function pickWinner() public {
+        require(msg.sender == manager);
+        require(players.length >= 3);
+        
+        uint r = random();
+        address payable winner;
+        
+        uint index = r % players.length;
+        winner = players[index];
+        
+        winner.transfer(getBalance());
+    }
 }
