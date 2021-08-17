@@ -57,6 +57,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "highestBidder",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "highestBindingBid",
 				"outputs": [
 					{
@@ -92,6 +105,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "placeBid",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -136,11 +156,11 @@
 	},
 	"sources": {
 		"contracts/auction.sol": {
-			"keccak256": "0xd5a0cd4927959023dce1a3fda129c07d5adcee6e0b8f29f0bf360ad0b1ecdeae",
+			"keccak256": "0xa1d6896b9ceab695a22e0d87918d467c564f93d05e3c3d69a0b3b1a295a546f4",
 			"license": "GPL-3.int208",
 			"urls": [
-				"bzz-raw://72518f0618652b8fc2f782a55e8c3c6d1b0cef6f1562961acfb102d57f45b1e2",
-				"dweb:/ipfs/QmeD5pjPaLrgM2cZV3fN3NSqWGtUTdzqzs7sXtzLCoTKeq"
+				"bzz-raw://07633489ab1dc153ce60d53ade5991c9ec75a4cf602434cb25d5627bea3135a6",
+				"dweb:/ipfs/QmUjnccShFbe6aMDdZVLiY5Fab3ueVcsG345PNiStrzZnk"
 			]
 		}
 	},
