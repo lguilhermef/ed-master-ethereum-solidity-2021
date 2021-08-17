@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/deployer.sol": "Deployer"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/deployer.sol": {
+			"keccak256": "0xd9f4bb172cee3e8fe2bedc4ed95b2b57677adc3debd0996d32e9c024f747a695",
+			"license": "GPL-3.int208",
+			"urls": [
+				"bzz-raw://041c0a540fabfe1b236f1c591d3fd20cfd9b0fd6e0c505ceb25561143a82f760",
+				"dweb:/ipfs/QmUacQ7wu4oiDNcacVs8daarBasw1ELh8CgdfeNcYpPyYZ"
+			]
+		}
+	},
+	"version": 1
+}

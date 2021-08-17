@@ -2,6 +2,17 @@
 
 pragma solidity >=0.5.0 <0.9.0;
 
+contract AuctionCreator {
+    
+    Auction[] public auctions;
+    
+    function createAuction() public {
+        
+        Auction auction = new Auction(msg.sender);
+        auctions.push(auction);
+    }
+}
+
 contract Auction {
     
     enum State {
@@ -22,8 +33,8 @@ contract Auction {
     mapping(address => uint) public bidMap;
     uint bidIncrementInWei;
     
-    constructor() {
-        owner = payable(msg.sender);
+    constructor(address auctionCreatorEoa) {
+        owner = payable(auctionCreatorEoa);
         auctionState = State.Running;
         startBlock = block.number;
         endBlock = startBlock + blocksPerWeek;
