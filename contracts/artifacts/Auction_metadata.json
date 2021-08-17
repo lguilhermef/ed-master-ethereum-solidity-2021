@@ -44,6 +44,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "cancelAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "endBlock",
 				"outputs": [
 					{
@@ -53,6 +60,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "finalizeAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -156,11 +170,11 @@
 	},
 	"sources": {
 		"contracts/auction.sol": {
-			"keccak256": "0xa1d6896b9ceab695a22e0d87918d467c564f93d05e3c3d69a0b3b1a295a546f4",
+			"keccak256": "0x81f00b67099501bc7b694258160a0ebbd4adf7c18fd914d564680dc4fe941645",
 			"license": "GPL-3.int208",
 			"urls": [
-				"bzz-raw://07633489ab1dc153ce60d53ade5991c9ec75a4cf602434cb25d5627bea3135a6",
-				"dweb:/ipfs/QmUjnccShFbe6aMDdZVLiY5Fab3ueVcsG345PNiStrzZnk"
+				"bzz-raw://c602e4931d65ae2b9e59dece8f1f5506e1e9ab0db21c09da3d79bb3f95e038f8",
+				"dweb:/ipfs/QmYQXstXFLETmUrsCZNSP4PYPoUKYoQM8LoWppJnUPVVe2"
 			]
 		}
 	},
