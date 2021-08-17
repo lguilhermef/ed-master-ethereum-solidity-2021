@@ -109,6 +109,7 @@ contract Auction {
             value = bidMap[msg.sender];
         }
         
+        bidMap[recipient] = 0;
         recipient.transfer(value);
     }
 }
