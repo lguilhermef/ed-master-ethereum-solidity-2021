@@ -1,6 +1,4 @@
-# Lottery Smart Contract
-<<<<<<< HEAD
-A lottery smart contract developed with Solidity while enrolled in the course [Master Ethereum and Solidity Programming](https://www.udemy.com/course/master-ethereum-and-solidity-programming-with-real-world-apps) by Andrei Dumitrescu and Crystal Mind Academy.
-=======
-An auction smart contract developed with Solidity while enrolled in the course [Master Ethereum and Solidity Programming](https://www.udemy.com/course/master-ethereum-and-solidity-programming-with-real-world-apps) by Andrei Dumitrescu and Crystal Mind Academy.
->>>>>>> old_b/master
+# Solidity Short Projects
+This repository holds a few short projects developed with Solidity while enrolled in the course [Master Ethereum and Solidity Programming](https://www.udemy.com/course/master-ethereum-and-solidity-programming-with-real-world-apps) by Andrei Dumitrescu and Crystal Mind Academy.
+
+The projects include smart contracts for a Lottery, an Auction, and Crowdfunding.    
