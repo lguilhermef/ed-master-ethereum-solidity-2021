@@ -61,6 +61,29 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "createRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "deadline",
 				"outputs": [
@@ -84,6 +107,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRefund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -115,6 +145,19 @@
 			{
 				"inputs": [],
 				"name": "numOfContributors",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numRequests",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -171,11 +214,11 @@
 	},
 	"sources": {
 		"crowdfunding/crowdfunding.sol": {
-			"keccak256": "0x8665568c454c7ae33bbd2790a837737104a83c1f9448f83c8e74ceb3fc1f565c",
+			"keccak256": "0x5dba521a123f047c3dfb566b2ee1f9731ce279bc66c93bffabc888a8e5a7ec56",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://066360ec87147dee9d92168ee0ff5f880b7aa8cfd244efca57f8e421e613fb98",
-				"dweb:/ipfs/QmYgT3nkq13hzYsNG7n1dudaGr5peHJBB7tbgHf2M6Asak"
+				"bzz-raw://55c686c5c357e87f0fe3063fe3187f3921a16a963a7fbb345a02c73d0899446a",
+				"dweb:/ipfs/QmUESk75CEwmwBSX1q4GvMpnU5LDc5Ea2iRzgN4NuEDosC"
 			]
 		}
 	},
