@@ -182,6 +182,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestNum",
+						"type": "uint256"
+					}
+				],
+				"name": "voteRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -214,11 +227,11 @@
 	},
 	"sources": {
 		"crowdfunding/crowdfunding.sol": {
-			"keccak256": "0x5dba521a123f047c3dfb566b2ee1f9731ce279bc66c93bffabc888a8e5a7ec56",
+			"keccak256": "0x14d150dc637fd2c3a36c0206b97501c9576d3fc995b4acada51dedb20ca0257d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://55c686c5c357e87f0fe3063fe3187f3921a16a963a7fbb345a02c73d0899446a",
-				"dweb:/ipfs/QmUESk75CEwmwBSX1q4GvMpnU5LDc5Ea2iRzgN4NuEDosC"
+				"bzz-raw://90f92288121d2ceb502e2a13e3f5c99f8627a9ea54b5f5c9f6b06c8eac743b6e",
+				"dweb:/ipfs/QmcyF2AgasZfCYh4x2Vf3G3EHGUgpq2koZPuh2FwNLS5qr"
 			]
 		}
 	},
