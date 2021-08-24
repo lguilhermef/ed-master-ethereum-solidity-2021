@@ -130,6 +130,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestNum",
+						"type": "uint256"
+					}
+				],
+				"name": "makePayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "minimumContribution",
 				"outputs": [
@@ -227,11 +240,11 @@
 	},
 	"sources": {
 		"crowdfunding/crowdfunding.sol": {
-			"keccak256": "0x14d150dc637fd2c3a36c0206b97501c9576d3fc995b4acada51dedb20ca0257d",
+			"keccak256": "0xacac515063885a55983d6f327367fe94ac315eeb1bbc54bc2ff9a8843411e233",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://90f92288121d2ceb502e2a13e3f5c99f8627a9ea54b5f5c9f6b06c8eac743b6e",
-				"dweb:/ipfs/QmcyF2AgasZfCYh4x2Vf3G3EHGUgpq2koZPuh2FwNLS5qr"
+				"bzz-raw://c690a1a1f3c2f8cdaa1c2bac0f5a3d2386348d62f7b093cac1674b103a842fdb",
+				"dweb:/ipfs/QmbmyrxmnLjbXYdPtig6i8fmryofyV18eNhaG3og1nKL3h"
 			]
 		}
 	},

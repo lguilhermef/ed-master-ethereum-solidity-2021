@@ -74,14 +74,29 @@ contract CrowdFunding {
     }
     
     function voteRequest(uint _requestNum) public {
+        
         require(contributors[msg.sender] > 0, "In order to vote, you must be a contributor.");
         
         Request storage thisRequest = requests[_requestNum];
         
         require(thisRequest.voters[msg.sender] == false, "You have already voted.");
+        
         thisRequest.voters[msg.sender] = true;
         thisRequest.numOfVotes++;
     }
+    
+    function makePayment(uint _requestNum) public onlyAdmin {
+        
+        require(raisedAmount >= goal);
+        
+        Request storage thisRequest = requests[_requestNum];
+        
+        require(thisRequest.completed == false, "The request has been completed.");
+        require(thisRequest.numOfVotes > (numOfContributors / 2), "Not enough votes for this request.");
+
+        thisRequest.recipient.transfer(thisRequest.value);
+        thisRequest.completed = true;
+    } 
     
     modifier onlyAdmin() {
         require(msg.sender == admin);
