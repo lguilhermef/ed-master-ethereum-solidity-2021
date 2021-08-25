@@ -47,12 +47,9 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"allowance(address,address)": "dd62ed3e",
-			"approve(address,uint256)": "095ea7b3",
 			"balanceOf(address)": "70a08231",
 			"totalSupply()": "18160ddd",
-			"transfer(address,uint256)": "a9059cbb",
-			"transferForm(address,address,uint256)": "3112ae5b"
+			"transfer(address,uint256)": "a9059cbb"
 		}
 	},
 	"abi": [
@@ -112,54 +109,6 @@
 					"internalType": "address",
 					"name": "tokenOwner",
 					"type": "address"
-				},
-				{
-					"internalType": "address",
-					"name": "spender",
-					"type": "address"
-				}
-			],
-			"name": "allowance",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "remaining",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "spender",
-					"type": "address"
-				},
-				{
-					"internalType": "uint256",
-					"name": "tokens",
-					"type": "uint256"
-				}
-			],
-			"name": "approve",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "success",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "tokenOwner",
-					"type": "address"
 				}
 			],
 			"name": "balanceOf",
@@ -200,35 +149,6 @@
 				}
 			],
 			"name": "transfer",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "success",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "from",
-					"type": "address"
-				},
-				{
-					"internalType": "address",
-					"name": "to",
-					"type": "address"
-				},
-				{
-					"internalType": "uint256",
-					"name": "tokens",
-					"type": "uint256"
-				}
-			],
-			"name": "transferForm",
 			"outputs": [
 				{
 					"internalType": "bool",
