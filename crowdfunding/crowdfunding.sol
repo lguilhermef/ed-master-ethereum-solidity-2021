@@ -32,6 +32,15 @@ contract CrowdFunding {
         admin = msg.sender;
     }
     
+    event ContributeEvent(address _send, uint _value);
+    event CreateRequestEvent(string _description, address _recipient, uint _value);
+    event MakePaymentEvent(address _recipient, uint _value);
+    
+    modifier onlyAdmin() {
+        require(msg.sender == admin);
+        _;
+    }
+    
     function contribute() public payable {
         
         require(block.timestamp < deadline);
@@ -43,6 +52,8 @@ contract CrowdFunding {
         
         contributors[msg.sender] += msg.value;
         raisedAmount += msg.value;
+        
+        emit ContributeEvent(msg.sender, msg.value);
     }
     
     function getBalance() public view returns(uint) {
@@ -71,6 +82,8 @@ contract CrowdFunding {
         newRequest.value = _value;
         newRequest.completed = false;
         newRequest.numOfVotes = 0;
+        
+        emit CreateRequestEvent(_description, _recipient, _value);
     }
     
     function voteRequest(uint _requestNum) public {
@@ -96,12 +109,9 @@ contract CrowdFunding {
 
         thisRequest.recipient.transfer(thisRequest.value);
         thisRequest.completed = true;
+        
+        emit MakePaymentEvent(thisRequest.recipient, thisRequest.value);
     } 
-    
-    modifier onlyAdmin() {
-        require(msg.sender == admin);
-        _;
-    }
     
     receive() payable external {
         contribute();
