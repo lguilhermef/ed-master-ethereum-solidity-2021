@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"erc20/erc20.sol": "BaseContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"erc20/erc20.sol": {
+			"keccak256": "0x271ad942fe47e5c0cbbcc53d070f1ac5b289f07d71abd742e02febe1210974d4",
+			"license": "GPL-3.int208",
+			"urls": [
+				"bzz-raw://51f4d6827a597b0cb4d9ca25535f28a8d6db5467d0fac306714b1cb791f4cd6a",
+				"dweb:/ipfs/QmR8t2xPRyipM4KFo2qvV1BDh3fX9QXwnSQUy36523Um1W"
+			]
+		}
+	},
+	"version": 1
+}
