@@ -15,3 +15,15 @@ interface ERC20Interface {
     event Transfer(address indexed from, address indexed to, uint tokens);
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
+
+contract Crypto is ERC20Interface {
+    
+    string public name = "My First Crypto";
+    string public symbol = "MFC";
+    uint public decimals = 0; //Usually 18
+    uint public override totalSupply = 1000000;
+    
+    address public founder;
+    mapping(address => uint) public balances;
+    
+}
