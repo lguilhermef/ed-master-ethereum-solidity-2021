@@ -84,7 +84,7 @@ contract CryptoICO is Crypto {
     uint public hardcap = 300 ether;
     uint public raisedAmount;
     
-    uint public saleStart = block.timestamp + 3600; //Starts in one hour, as 3600 are the seconds in a hour.
+    uint public saleStart = block.timestamp; //Starts in one hour, as 3600 are the seconds in a hour.
     uint public saleEnd = block.timestamp + 604800; //ICO ends in one week, which has 604800 seconds.
     uint public tokenTrateStart = saleEnd + 604800;
     
