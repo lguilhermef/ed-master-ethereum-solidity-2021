@@ -153,7 +153,7 @@ contract CryptoICO is Crypto {
         return true;
     }
     
-    receive() payable external() {
+    receive() payable external {
         invest();
     }
 }
