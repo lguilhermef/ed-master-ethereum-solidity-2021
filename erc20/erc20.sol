@@ -98,5 +98,38 @@ contract CryptoICO is Crypto {
         deposit = _deposit;
         admin = msg.sender;
     }
+    
+    modifier onlyAdmin(){
+        require(msg.sender == admin);
+        _;
+    }
+    
+    function halt() public onlyAdmin{
+        icoState = State.halted;
+    }
+    
+    function resume() public onlyAdmin {
+        icoState = State.running;
+    }
+    
+    function changeDepositAddress(address payable newDeposit) public onlyAdmin {
+        deposit = newDeposit;
+    }
+    
+    function getCurrentState() public view returns(State) {
+        if (icoState == State.halted) {
+            return State.halted;
+        }
+        
+        if (block.timestamp < saleStart) {
+            return State.beforeStart;
+        }
+        
+        if (block.timestamp >= saleStart && block.timestamp <= saleEnd) {
+            return State.running;
+        }
+        
+        return State.afterEnd;
+    }
    
 }
