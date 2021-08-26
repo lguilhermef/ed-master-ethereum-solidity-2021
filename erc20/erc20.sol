@@ -75,3 +75,28 @@ contract Crypto is ERC20Interface {
         return true;
     }
 }
+
+contract CryptoICO is Crypto {
+    
+    address public admin;
+    address payable public deposit;
+    uint tokenPrice = 0.001 ether;
+    uint public hardcap = 300 ether;
+    uint public raisedAmount;
+    
+    uint public saleStart = block.timestamp + 3600; //Starts in one hour, as 3600 are the seconds in a hour.
+    uint public saleEnd = block.timestamp + 604800; //ICO ends in one week, which has 604800 seconds.
+    uint public tokenTrateStart = saleEnd + 604800;
+    
+    uint public maxInvestment = 5 ether;
+    uint public minInvestment = 0.1 ether;
+
+    enum State {beforeStart, running, afterEnd, halted}
+    State public icoState;
+    
+    constructor(address payable _deposit) {
+        deposit = _deposit;
+        admin = msg.sender;
+    }
+   
+}
