@@ -66,6 +66,54 @@
 						"internalType": "address",
 						"name": "tokenOwner",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokens",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenOwner",
+						"type": "address"
 					}
 				],
 				"name": "balanceOf",
@@ -186,6 +234,35 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokens",
+						"type": "uint256"
+					}
+				],
+				"name": "transferForm",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -216,11 +293,11 @@
 	},
 	"sources": {
 		"erc20/erc20.sol": {
-			"keccak256": "0x01031a5db409797b47090dfeb8876f85c1393549a5e247a1161053f274109a79",
+			"keccak256": "0x154143966e5fa4d9ac9bb76026cd4ee6aefb8df115d37795c36d78de9a11b864",
 			"license": "GPL-3.int208",
 			"urls": [
-				"bzz-raw://e6ab8fd61bb1cfde828496e0cea39cbff18c63b8bd9133d03643e7a8c6a2d6f8",
-				"dweb:/ipfs/QmW8xyBkYGkuuaSMYe12JT6uogKq8PkoTiAdnGQrQgNniE"
+				"bzz-raw://d4b0aaf00c52e211b32cc2b0f62c1a555ed6894d873c6d5ffb30dad5c4d316d3",
+				"dweb:/ipfs/QmXuntC326ofMCXcavRV3KjYMN95ktmX7KnY5VFTjEmHwY"
 			]
 		}
 	},

@@ -50,17 +50,17 @@ contract Crypto is ERC20Interface {
         return true;
     }
     
-    function allowance(address tokenOwner, address spender) view public override returns(uint){
+    function allowance(address tokenOwner, address spender) public view override returns(uint){
         return allowed[tokenOwner][spender];
     }
     
-    function approve(address spender, uint tokens) public override return (bool success) {
+    function approve(address spender, uint tokens) public override returns (bool success) {
         require(balances[msg.sender] >= tokens);
         require(tokens > 0);
         
         allowed[msg.sender][spender] = tokens;
     
-        emit Approval(msg.spender, spender, tokens);
+        emit Approval(msg.sender, spender, tokens);
         return true;
     }
     
