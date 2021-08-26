@@ -293,11 +293,11 @@
 	},
 	"sources": {
 		"erc20/erc20.sol": {
-			"keccak256": "0xd07fdd327e1864be528babee7da5b5493bbada325bfa4d2ee9b2593f60bc7a76",
+			"keccak256": "0xccf90a38fc480e2528f5695d7e46f6a63f26838a7ba119f8ed54f5495a88306b",
 			"license": "GPL-3.int208",
 			"urls": [
-				"bzz-raw://d06a60310d4ae1776865762ea1c5550e7b83a6b676a3159286fbd153bbb440ee",
-				"dweb:/ipfs/QmUSSpAUGM8YpdLL4YVzU95BCAY15r3wHsv1jNEpkSoLHM"
+				"bzz-raw://716e7dca211601335ae135074f499dadbc626b5f1ae18bc5bbfef5d768dd6b1b",
+				"dweb:/ipfs/QmXEhdbCKE4v9GhGRWSsHLdbiMm7U2xKUJNZHnh748bRCA"
 			]
 		}
 	},
