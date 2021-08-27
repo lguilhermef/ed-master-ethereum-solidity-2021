@@ -38,7 +38,7 @@ contract Crypto is ERC20Interface {
         return balances[tokenOwner];
     }
     
-    function transfer(address to, uint tokens) public override returns (bool success) {
+    function transfer(address to, uint tokens) public virtual override returns (bool success) {
         
         require(balances[msg.sender] >= tokens);
         
@@ -64,7 +64,7 @@ contract Crypto is ERC20Interface {
         return true;
     }
     
-    function transferForm(address from, address to, uint tokens) public override returns (bool success) {
+    function transferForm(address from, address to, uint tokens) public virtual override returns (bool success) {
         require(allowed[from][to] >= tokens);
         require(balances[from] >= tokens);
         
@@ -86,7 +86,7 @@ contract CryptoICO is Crypto {
     
     uint public saleStart = block.timestamp; //Starts in one hour, as 3600 are the seconds in a hour.
     uint public saleEnd = block.timestamp + 604800; //ICO ends in one week, which has 604800 seconds.
-    uint public tokenTrateStart = saleEnd + 604800;
+    uint public tokenTradeStart = saleEnd + 604800;
     
     uint public maxInvestment = 5 ether;
     uint public minInvestment = 0.1 ether;
@@ -152,6 +152,21 @@ contract CryptoICO is Crypto {
         
         return true;
     }
+    
+    function transfer(address to, uint tokens) public override returns (bool success) {
+        require(block.timestamp > tokenTradeStart)
+        Crypto.transfer(to, tokens);
+        
+        return true;
+    }
+    
+    function transferForm(address from, address to, uint tokens) public virtual override returns (bool success) {
+    
+        require(block.timestamp > tokenTradeStart)
+        Crypto.transferForm(from, to, tokens);
+        return true;
+    }
+
     
     receive() payable external {
         invest();
