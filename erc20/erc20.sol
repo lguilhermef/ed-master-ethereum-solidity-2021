@@ -166,6 +166,13 @@ contract CryptoICO is Crypto {
         Crypto.transferForm(from, to, tokens);
         return true;
     }
+    
+    function burn() public returns (bool) {
+        icoState = getCurrentState();
+        require(icoState == State.afterEnd);
+        balances[founder] = 0;
+        return true;
+    }
 
     
     receive() payable external {
